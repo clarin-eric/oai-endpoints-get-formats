@@ -15,6 +15,7 @@ ENDPOINT_INFO_URL="${API_URL}/model/OAIPMHEndpoint"
 main() {
 	get_endpoints | {
 		while read ENDPOINT; do
+			echo $ENDPOINT > /dev/stderr
 			get_formats_for_endpoint $ENDPOINT
 		done
 	} | jq -s # combine into a json array
@@ -33,10 +34,16 @@ get_endpoints() {
 # Gets formats from the specified endpoint and turns this into a json object
 #########################################################################################
 get_formats_for_endpoint() {
-	ENDPOINT=$1
+	ENDPOINT="$1"
+	FORMATS_URL="${ENDPOINT}?verb=ListMetadataFormats"
+	
+	RESPONSE=$(curl -sL "${FORMATS_URL}")
+	
+	#TODO: feed response into yq
+	
 	jq -n '{
 		uri: "'"${ENDPOINT}"'",
-		formats: ["",""]
+		formats: [{metadataPrefix: "", schema: "", metadataNamespace: ""}]
 	}'
 }
 

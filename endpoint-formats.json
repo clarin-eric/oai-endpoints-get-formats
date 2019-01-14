@@ -106,11 +106,13 @@
   },
   {
     "uri": "http://clst.science.ru.nl/oai/provider",
-    "formats": {
-      "metadataPrefix": "cmdi",
-      "schema": "https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1493735943947/xsd/",
-      "metadataNamespace": "http://www.clarin.eu/cmd/"
-    }
+    "formats": [
+      {
+        "metadataPrefix": "cmdi",
+        "schema": "https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1493735943947/xsd/",
+        "metadataNamespace": "http://www.clarin.eu/cmd/"
+      }
+    ]
   },
   {
     "uri": "http://cocoon.huma-num.fr/crdo_servlet/oai-pmh",
@@ -339,11 +341,13 @@
   },
   {
     "uri": "http://oai.talkbank.org/oai/provider",
-    "formats": {
-      "metadataPrefix": "cmdi",
-      "schema": "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1393514855466/xsd",
-      "metadataNamespace": "http://www.clarin.eu/cmd/"
-    }
+    "formats": [
+      {
+        "metadataPrefix": "cmdi",
+        "schema": "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1393514855466/xsd",
+        "metadataNamespace": "http://www.clarin.eu/cmd/"
+      }
+    ]
   },
   {
     "uri": "http://oaipmh.huygens.knaw.nl/oai",
@@ -502,11 +506,13 @@
   },
   {
     "uri": "http://tekstlab.uio.no/oai",
-    "formats": {
-      "metadataPrefix": "cmdi",
-      "schema": "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1271859438204/xsd",
-      "metadataNamespace": "http://www.clarin.eu/cmd/"
-    }
+    "formats": [
+      {
+        "metadataPrefix": "cmdi",
+        "schema": "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1271859438204/xsd",
+        "metadataNamespace": "http://www.clarin.eu/cmd/"
+      }
+    ]
   },
   {
     "uri": "http://weblicht.sfs.uni-tuebingen.de/oaiprovider/",
@@ -662,6 +668,11 @@
     "uri": "http://www.phonetik.uni-muenchen.de/cgi-bin/BASRepository/oaipmh/oai.pl",
     "formats": [
       {
+        "metadataPrefix": "olac",
+        "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
+        "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
+      },
+      {
         "metadataPrefix": "oai_dc",
         "schema": "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
         "metadataNamespace": "http://purl.org/dc/elements/1.1/"
@@ -670,11 +681,6 @@
         "metadataPrefix": "cmdi",
         "schema": "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1324638957739/xsd http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1336550377513/xsd",
         "metadataNamespace": "http://www.clarin.eu/cmd/"
-      },
-      {
-        "metadataPrefix": "olac",
-        "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
-        "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
       }
     ]
   },
@@ -1085,7 +1091,23 @@
   },
   {
     "uri": "https://talar.sfb833.uni-tuebingen.de:8443/erdora/rest/oai",
-    "formats": null
+    "formats": [
+      {
+        "metadataPrefix": "oai_dc",
+        "schema": "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+        "metadataNamespace": "http://www.openarchives.org/OAI/2.0/oai_dc/"
+      },
+      {
+        "metadataPrefix": "marc21",
+        "schema": "http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd",
+        "metadataNamespace": "http://www.loc.gov/MARC21/slim"
+      },
+      {
+        "metadataPrefix": "cmdi",
+        "schema": "https://infra.clarin.eu/CMDI/1.x/xsd/cmd-envelop.xsd",
+        "metadataNamespace": "http://www.clarin.eu/cmd/1"
+      }
+    ]
   },
   {
     "uri": "https://www.meertens.knaw.nl/flat/oai2",

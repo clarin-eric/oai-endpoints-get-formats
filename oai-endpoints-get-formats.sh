@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Script to retrieve 
+# Script to fetch metadata prefixes from CLARIN metadata providers (B and C centres).
 #
 ######
 

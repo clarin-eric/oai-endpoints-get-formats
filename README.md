@@ -24,3 +24,10 @@ Run the script with bash:
 ```sh
 bash oai-endpoints-get-formats.sh
 ```
+
+# Output
+
+ * JSON file with compiled output: [endpoint-formats.json](./endpoint-formats.json)
+ * [HTML](./html) generated with [json2table.com](http://json2table.com)
+   * [preview](https://htmlpreview.github.io/?https://github.com/clarin-eric/oai-endpoints-get-formats/blob/master/html/endpoint-formats.html)
+ 

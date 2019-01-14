@@ -37,13 +37,14 @@ get_formats_for_endpoint() {
 	ENDPOINT="$1"
 	FORMATS_URL="${ENDPOINT}?verb=ListMetadataFormats"
 	
-	RESPONSE=$(curl -sL "${FORMATS_URL}")
+	#extract metadataformat entries from xml (output as json)
+	FORMATS=$(curl -sL "${FORMATS_URL}" | xq '.[]|.ListMetadataFormats.metadataFormat')
 	
-	#TODO: feed response into yq
+	#feed response into yq
 	
 	jq -n '{
 		uri: "'"${ENDPOINT}"'",
-		formats: [{metadataPrefix: "", schema: "", metadataNamespace: ""}]
+		formats: '"${FORMATS}"'
 	}'
 }
 

@@ -9,14 +9,13 @@ The following tools/commands will be assumed to be available in the shell enviro
 
  * [curl](https://github.com/curl/curl)
  * [jq](https://stedolan.github.io/jq)
- * [yq](https://github.com/kislyuk/yq)
  * [xmlstarlet](http://xmlstar.sourceforge.net)
  
 Let's assume you have bash and curl. On MacOS, install the dependencies using 
 [Brew](https://brew.sh/) with the following command:
 
 ```sh
-brew install jq yq xmlstarlet
+brew install jq xmlstarlet
 ```
 
 # Running

@@ -405,6 +405,26 @@
     ]
   },
   {
+    "uri": "http://phonotheque.mmsh.huma-num.fr/oai/provider",
+    "formats": [
+      {
+        "metadataPrefix": "oai_dc",
+        "schema": "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+        "metadataNamespace": "http://www.openarchives.org/OAI/2.0/oai_dc/"
+      }
+    ]
+  },
+  {
+    "uri": "http://polmine.sowi.uni-due.de:8080/oai/provider",
+    "formats": [
+      {
+        "metadataPrefix": "oai_dc",
+        "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
+        "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
+      }
+    ]
+  },
+  {
     "uri": "http://repos.ids-mannheim.de/oaiprovider/",
     "formats": [
       {
@@ -538,11 +558,6 @@
         "metadataNamespace": "http://www.openarchives.org/OAI/2.0/oai_dc/"
       },
       {
-        "metadataPrefix": "me",
-        "schema": "http://ws02.iula.upf.edu/corpus_data/schemas/me.xsd",
-        "metadataNamespace": "http://ws02.iula.upf.edu/corpus_data/schemas"
-      },
-      {
         "metadataPrefix": "olac",
         "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
         "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
@@ -668,14 +683,14 @@
     "uri": "http://www.phonetik.uni-muenchen.de/cgi-bin/BASRepository/oaipmh/oai.pl",
     "formats": [
       {
-        "metadataPrefix": "olac",
-        "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
-        "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
-      },
-      {
         "metadataPrefix": "oai_dc",
         "schema": "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
         "metadataNamespace": "http://purl.org/dc/elements/1.1/"
+      },
+      {
+        "metadataPrefix": "olac",
+        "schema": "http://www.language-archives.org/OLAC/1.1/olac.xsd",
+        "metadataNamespace": "http://www.language-archives.org/OLAC/1.1/"
       },
       {
         "metadataPrefix": "cmdi",
